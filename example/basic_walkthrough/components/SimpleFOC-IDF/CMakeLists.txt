@@ -10,6 +10,7 @@ idf_component_register( SRCS  ${SOURCE}
                         "./current_sense" "./current_sense/hardware_specific"
                         "./drivers/" "./drivers/hardware_specific"
                         "./sensors/"
+                        "./trans_assist/"
                         REQUIRES freertos 
                         PRIV_REQUIRES pthread
                         )
