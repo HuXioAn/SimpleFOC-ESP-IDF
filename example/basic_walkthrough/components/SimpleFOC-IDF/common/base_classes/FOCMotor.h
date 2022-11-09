@@ -215,7 +215,7 @@ class FOCMotor
      * 
      * @param serial Monitoring Serial class reference
      */
-    void useMonitoring(Print &serial);
+    void useMonitoring();//para Print deleted 
 
     /**
      * Utility function intended to be used with serial plotter to monitor motor variables

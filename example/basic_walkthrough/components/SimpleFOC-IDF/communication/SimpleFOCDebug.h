@@ -3,6 +3,8 @@
 #define __SIMPLEFOCDEBUG_H__
 
 //#include "Arduino.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 
 /**
@@ -35,7 +37,8 @@
 
 #ifndef SIMPLEFOC_DISABLE_DEBUG
 
-
+// From arduino library WString.h, an empty class to provide a pointer type
+class __FlashStringHelper;
 
 class SimpleFOCDebug {
 public:
@@ -56,8 +59,9 @@ public:
     static void print(int val);
     static void print(float val);
 
-protected:
-    static Print* _debugPrint;
+//stop using arduino class Print
+/* protected:
+    static Print* _debugPrint; */
 };
 
 

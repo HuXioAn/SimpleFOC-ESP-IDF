@@ -79,9 +79,9 @@ float FOCMotor::electricalAngle(){
  *  Monitoring functions
  */
 // function implementing the monitor_port setter
-void FOCMotor::useMonitoring(Print &print){
-  monitor_port = &print; //operate on the address of print
-  SimpleFOCDebug::enable(&print);
+void FOCMotor::useMonitoring(){//para Print deleted
+  //monitor_port = &print; //operate on the address of print
+  SimpleFOCDebug::enable();
   SIMPLEFOC_DEBUG("MOT: Monitor enabled!");
 }
 
