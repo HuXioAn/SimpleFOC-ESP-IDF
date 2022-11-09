@@ -1,8 +1,8 @@
 #ifndef MAGNETICSENSORI2C_LIB_H
 #define MAGNETICSENSORI2C_LIB_H
 
-#include "Arduino.h"
-#include <Wire.h>
+//#include "Arduino.h"
+//#include <Wire.h>
 #include "../common/base_classes/Sensor.h"
 #include "../common/foc_utils.h"
 #include "../common/time_utils.h"

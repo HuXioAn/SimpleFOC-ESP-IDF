@@ -1,7 +1,7 @@
 #ifndef MAGNETICSENSORPWM_LIB_H
 #define MAGNETICSENSORPWM_LIB_H
 
-#include "Arduino.h"
+//#include "Arduino.h"
 #include "../common/base_classes/Sensor.h"
 #include "../common/foc_utils.h"
 #include "../common/time_utils.h"

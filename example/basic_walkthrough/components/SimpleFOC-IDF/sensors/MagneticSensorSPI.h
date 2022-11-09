@@ -2,8 +2,8 @@
 #define MAGNETICSENSORSPI_LIB_H
 
 
-#include "Arduino.h"
-#include <SPI.h>
+//#include "Arduino.h"
+//#include <SPI.h>
 #include "../common/base_classes/Sensor.h"
 #include "../common/foc_utils.h"
 #include "../common/time_utils.h"

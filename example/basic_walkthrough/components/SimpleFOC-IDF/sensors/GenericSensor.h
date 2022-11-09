@@ -1,7 +1,7 @@
 #ifndef GENERIC_SENSOR_LIB_H
 #define GENERIC_SENSOR_LIB_H
 
-#include "Arduino.h"
+//#include "Arduino.h"
 #include "../common/foc_utils.h"
 #include "../common/time_utils.h"
 #include "../common/base_classes/Sensor.h"
