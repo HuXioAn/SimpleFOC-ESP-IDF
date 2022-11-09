@@ -1,7 +1,8 @@
 #ifndef FOCUTILS_LIB_H
 #define FOCUTILS_LIB_H
 
-#include "Arduino.h"
+//#include "Arduino.h"
+#include <math.h>
 
 // sign function
 #define _sign(a) ( ( (a) < 0 )  ?  -1   : ( (a) > 0 ) )
