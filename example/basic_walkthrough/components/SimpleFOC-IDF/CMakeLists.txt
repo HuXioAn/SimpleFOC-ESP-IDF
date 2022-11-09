@@ -11,6 +11,7 @@ idf_component_register( SRCS  ${SOURCE}
                         "./drivers/" "./drivers/hardware_specific"
                         "./sensors/"
                         REQUIRES freertos 
+                        PRIV_REQUIRES pthread
                         )
 
 
