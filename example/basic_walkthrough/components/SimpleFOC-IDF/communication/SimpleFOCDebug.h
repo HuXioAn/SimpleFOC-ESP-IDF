@@ -2,7 +2,7 @@
 #ifndef __SIMPLEFOCDEBUG_H__
 #define __SIMPLEFOCDEBUG_H__
 
-#include "Arduino.h"
+//#include "Arduino.h"
 
 
 /**
@@ -34,6 +34,8 @@
 
 
 #ifndef SIMPLEFOC_DISABLE_DEBUG
+
+
 
 class SimpleFOCDebug {
 public:
