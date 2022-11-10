@@ -42,7 +42,7 @@ class __FlashStringHelper;
 
 class SimpleFOCDebug {
 public:
-    static void enable(Print* debugPrint = &Serial);
+    static void enable();
 
     static void println(const __FlashStringHelper* msg);
     static void println(const char* msg);

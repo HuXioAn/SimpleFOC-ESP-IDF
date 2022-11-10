@@ -10,6 +10,7 @@
 #include "../defaults.h"
 #include "../pid.h"
 #include "../lowpass_filter.h"
+#include "../../trans_assist/idf_serial.h"
 
 
 // monitoring bitmap
@@ -239,7 +240,8 @@ class FOCMotor
     CurrentSense* current_sense; 
 
     // monitoring functions
-    Print* monitor_port; //!< Serial terminal variable if provided
+    Stream* monitor_port; //!< Serial terminal variable if provided
+    // change Print to self-defined class Stream 
   private:
     // monitor counting variable
     unsigned int monitor_cnt = 0 ; //!< counting variable

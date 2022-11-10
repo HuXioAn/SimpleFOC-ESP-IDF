@@ -6,6 +6,7 @@
 #include "../common/pid.h"
 #include "../common/lowpass_filter.h"
 #include "commands.h"
+#include "../trans_assist/idf_serial.h"
 
 
 #define MAX_COMMAND_LENGTH 20

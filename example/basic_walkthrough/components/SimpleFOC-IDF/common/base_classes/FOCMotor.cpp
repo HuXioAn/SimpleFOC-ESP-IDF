@@ -80,7 +80,7 @@ float FOCMotor::electricalAngle(){
  */
 // function implementing the monitor_port setter
 void FOCMotor::useMonitoring(){//para Print deleted
-  //monitor_port = &print; //operate on the address of print
+  monitor_port = new stream(); //operate on the address of print
   SimpleFOCDebug::enable();
   SIMPLEFOC_DEBUG("MOT: Monitor enabled!");
 }
@@ -90,7 +90,7 @@ void FOCMotor::useMonitoring(){//para Print deleted
 void FOCMotor::monitor() {
   if( !monitor_downsample || monitor_cnt++ < monitor_downsample ) return;
   monitor_cnt = 0;
-  if(!monitor_port) return;
+  if(!monitor_port) return;// it will always return since the func above keeps it null
   bool printed = 0;
 
   if(monitor_variables & _MON_TARGET){
